@@ -13,22 +13,22 @@ export default function SetForm({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "5px", marginTop: "5px" }}>
+    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
       <input
         type="number"
         placeholder="Reps"
         value={reps}
         onChange={(e) => setReps(e.target.value)}
-        style={{ width: "50px" }}
+        style={{ width: "110px" }}
       />
       <input
         type="number"
         placeholder="Poids"
         value={weight}
         onChange={(e) => setWeight(e.target.value)}
-        style={{ width: "50px" }}
+        style={{ width: "110px" }}
       />
-      <button type="submit">Ajouter</button>
+      <button type="submit">Ajouter un set</button>
     </form>
   );
 }
