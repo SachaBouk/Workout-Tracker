@@ -12,7 +12,7 @@ Développée avec **React + Tauri**, elle fonctionne aussi bien dans un navigate
 - 🧮 Ajout et suppression de séries (répétitions & poids)
 - 🗂️ Historique des séances par date
 - 💾 Sauvegarde locale (Web & Desktop)
-- 🌓 Mode sombre avec persistance
+- 🌓 Mode sombre
 - 🖥️ Application desktop multiplateforme (Tauri)
 
 ---
