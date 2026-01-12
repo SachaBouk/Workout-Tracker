@@ -28,6 +28,18 @@ Développée avec **React + Tauri**, elle fonctionne aussi bien dans un navigate
 
 ---
 
+## ⚙️ Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+
+- **Node.js** (version 18 ou supérieure)
+
+- **npm** ou **yarn**
+- **Rust** (via [rustup](https://rustup.rs/))
+- **Dépendances système Tauri** (selon votre OS)
+
+---
+
 ## 📦 Installation
 
 Cloner le dépôt :
