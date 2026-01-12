@@ -69,6 +69,14 @@ npm run dev
 npm run tauri dev
 ```
 
+## Build de production
+
+Pour créer un build de production de l'application :
+
+```bash
+npm run tauri build
+```
+
 ## 🎯 Objectif du POC
 
 Le but de ce Proof of Concept (POC) est avant tout de découvrir et d’expérimenter de nouvelles technologies.  
