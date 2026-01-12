@@ -42,6 +42,46 @@ export default function Home() {
                 if (data) stored = JSON.parse(data);
             }
 
+
+            if (stored.length === 0) {
+                stored = [
+                    {
+                        date: "2026-01-08",
+                        exercises: [
+                            { name: "Bench Press", sets: [{ reps: 10, weight: 60 }] }
+                        ]
+                    },
+                    {
+                        date: "2026-01-09",
+                        exercises: [
+                            { name: "Squat", sets: [{ reps: 12, weight: 80 }] }
+                        ]
+                    },
+                    {
+                        date: "2026-01-10",
+                        exercises: [
+                            { name: "Deadlift", sets: [{ reps: 8, weight: 100 }] }
+                        ]
+                    },
+                    {
+                        date: "2026-01-11",
+                        exercises: [
+                            { name: "Pull Ups", sets: [{ reps: 10, weight: 0 }] }
+                        ]
+                    },
+                    {
+                        date: "2026-01-12",
+                        exercises: [
+                            { name: "Overhead Press", sets: [{ reps: 12, weight: 40 }] }
+                        ]
+                    }
+                ];
+
+                if (!isTauri) {
+                    localStorage.setItem("workouts", JSON.stringify(stored));
+                }
+            }
+
             setWorkouts(stored);
 
             const today = new Date().toISOString().split("T")[0];
