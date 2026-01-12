@@ -1,7 +1,7 @@
 /* RESET SIMPLE */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin: 0;
@@ -14,10 +14,7 @@ body {
 .container {
   max-width: 720px;
   margin: 40px auto;
-  background-color: #ffffff;
-  padding: 25px 30px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
 }
 
 /* TITRES */
@@ -158,13 +155,13 @@ button.secondary:hover {
 }
 
 body.dark {
-  background-color: #121212;
+  background-color: #1e1e1e;
   color: #eee;
 }
 
-body.dark .container {
+/* body.dark .container {
   background-color: #1e1e1e;
-}
+} */
 
 body.dark .exercise {
   background-color: #2a2a2a;

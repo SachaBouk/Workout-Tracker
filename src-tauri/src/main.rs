@@ -5,7 +5,7 @@
 
 use std::fs;
 use std::path::PathBuf;
-use dirs::data_dir; // pour remplacer app_data_dir
+use dirs::data_dir; 
 
 #[tauri::command]
 fn save_workout(data: String) -> Result<(), String> {

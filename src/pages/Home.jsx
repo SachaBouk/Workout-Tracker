@@ -5,7 +5,7 @@ import History from "../components/History";
 import "../App.css";
 
 export default function Home() {
-  // ---------------- STATE ----------------
+  
   const [workouts, setWorkouts] = useState([]);
   const [workout, setWorkout] = useState({
     date: new Date().toISOString().split("T")[0],
@@ -18,13 +18,13 @@ export default function Home() {
 
   const isTauri = typeof window !== "undefined" && window.__TAURI__;
 
-  // ---------------- DARK MODE ----------------
+  
   useEffect(() => {
     document.body.className = darkMode ? "dark" : "";
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  // ---------------- LOAD WORKOUTS ----------------
+  
   useEffect(() => {
     const loadWorkouts = async () => {
       let stored = [];
@@ -57,7 +57,7 @@ export default function Home() {
     loadWorkouts();
   }, []);
 
-  // ---------------- SAVE WORKOUT ----------------
+  
   useEffect(() => {
     if (!workout) return;
 
@@ -78,7 +78,7 @@ export default function Home() {
     });
   }, [workout]);
 
-  // ---------------- ACTIONS ----------------
+  
   const addExercise = (name) => {
     if (!name.trim()) return;
 
@@ -117,7 +117,7 @@ export default function Home() {
     const selected = workouts.find(w => w.date === date);
     if (!selected) return;
 
-    // copie profonde
+    
     setWorkout({
       date: selected.date,
       exercises: selected.exercises.map(ex => ({
@@ -132,7 +132,7 @@ export default function Home() {
     setWorkout({ date: today, exercises: [] });
   };
 
-  // ---------------- RENDER ----------------
+  
   return (
     <div className="container">
       <h1>Workout Tracker</h1>
