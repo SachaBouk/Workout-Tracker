@@ -12,7 +12,7 @@ export default function ExerciseList({ exercises, onAddSet, onRemoveSet }) {
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Reps</th>
+                  <th>Répétitions</th>
                   <th>Poids (kg)</th>
                   <th></th>
                 </tr>

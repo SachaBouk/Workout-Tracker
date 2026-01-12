@@ -16,10 +16,10 @@ export default function SetForm({ onAdd }) {
     <form onSubmit={handleSubmit} style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
       <input
         type="number"
-        placeholder="Reps"
+        placeholder="Répétitions"
         value={reps}
         onChange={(e) => setReps(e.target.value)}
-        style={{ width: "110px" }}
+        style={{ width: "130px" }}
       />
       <input
         type="number"

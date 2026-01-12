@@ -145,13 +145,17 @@ export default function Home() {
                 >
                     {darkMode ? "☀️ Mode clair" : "🌙 Mode sombre"}
                 </button>
+                <div className="Headerline"></div>
 
             </div>
+
             <History workouts={workouts} onSelect={selectWorkout} />
+            <div className="line"></div>
 
             <button className="new-workout secondary" onClick={newWorkout}>
                 Nouvelle séance
             </button>
+            <div className="line"></div>
 
             <div className="exercise-form-container">
                 <span className="exercise-label">Ajouter un exercice :</span>
