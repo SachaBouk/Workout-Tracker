@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.set-form {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.set-form input {
+  flex: 1;
+}
+
+
+.history {
+  margin-bottom: 20px;
+}
+
+.history button {
+  background: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin: 2px 0;
+  cursor: pointer;
+}
